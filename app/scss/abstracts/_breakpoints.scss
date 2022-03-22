@@ -1,0 +1,30 @@
+// Breakpoints using the map function
+$breakpoints: (
+    small: 40em,
+    medium: 65em,
+);
+
+@mixin breakpoint($key) {
+    @media (min-width: map-get($breakpoints, $key)) {
+        @content;
+    }
+}
+
+//Alternative breakpoint syntax
+@mixin respond($breakpoint) {
+    @if $breakpoint == small {
+        @media (min-width: 37.5em) {
+            @content;
+        }
+    }
+    @if $breakpoint == medium {
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+    @if $breakpoint == large {
+        @media (min-width: 60em) {
+            @content;
+        }
+    }
+}
