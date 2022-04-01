@@ -19,6 +19,12 @@
     "homepage": "https://github.com/jschuh23/happy-mama-wellness#readme",
     "devDependencies": {
         "@parcel/transformer-sass": "^2.4.0",
-        "parcel": "^2.4.0"
+        "parcel": "^2.4.0",
+        "stylelint": "^14.6.1",
+        "stylelint-color-format": "^1.1.0",
+        "stylelint-config-prettier-scss": "^0.0.1",
+        "stylelint-config-standard-scss": "^3.0.0",
+        "stylelint-high-performance-animation": "^1.6.0",
+        "stylelint-order": "^5.0.0"
     }
 }
